@@ -1,0 +1,140 @@
+{
+  "events": [
+    {
+      "id": 123,
+      "category": "animal welfare",
+      "title": "Cat Adoption Day",
+      "description": "Find your new feline friend at this event.",
+      "location": "Meow Town",
+      "date": "January 28, 2022",
+      "time": "12:00",
+      "petsAllowed": true,
+      "organizer": "Kat Laydee"
+    },
+    {
+      "id": 456,
+      "category": "food",
+      "title": "Community Gardening",
+      "description": "Join us as we tend to the community edible plants.",
+      "location": "Flora City",
+      "date": "March 14, 2022",
+      "time": "10:00",
+      "petsAllowed": true,
+      "organizer": "Fern Pollin"
+    },
+    {
+      "id": 789,
+      "category": "sustainability",
+      "title": "Beach Cleanup",
+      "description": "Help pick up trash along the shore.",
+      "location": "Playa Del Carmen",
+      "date": "July 22, 2022",
+      "time": "11:00",
+      "petsAllowed": false,
+      "organizer": "Carey Wales"
+    },
+    {
+      "id": 1001,
+      "category": "animal welfare",
+      "title": "Dog Adoption Day",
+      "description": "Find your new canine friend at this event.",
+      "location": "Woof Town",
+      "date": "August 28, 2022",
+      "time": "12:00",
+      "petsAllowed": true,
+      "organizer": "Dawg Dahd"
+    },
+    {
+      "id": 1002,
+      "category": "food",
+      "title": "Canned Food Drive",
+      "description": "Bring your canned food to donate to those in need.",
+      "location": "Tin City",
+      "date": "September 14, 2022",
+      "time": "3:00",
+      "petsAllowed": true,
+      "organizer": "Kahn Opiner"
+    },
+    {
+      "id": 1003,
+      "category": "sustainability",
+      "title": "Highway Cleanup",
+      "description": "Help pick up trash along the highway.",
+      "location": "Highway 50",
+      "date": "July 22, 2022",
+      "time": "11:00",
+      "petsAllowed": false,
+      "organizer": "Brody Kill"
+    },
+    {
+      "id": "8c3c84c2-86ed-415d-81bd-83098860c159",
+      "category": "nature",
+      "title": "Nature is Great",
+      "description": "Jesus made them all",
+      "location": "All over",
+      "date": "NOW",
+      "time": "Forever",
+      "organizer": "Adam Jahr"
+    },
+    {
+      "id": "ee757152-17bb-4f02-95b3-273cb7601150",
+      "category": "community",
+      "title": "Bacssm",
+      "description": "We are a community of believers",
+      "location": "Buea",
+      "date": "SUNDAY 2",
+      "time": "9:30 AM",
+      "organizer": "Adam Jahr"
+    },
+    {
+      "id": "7ea3c1c3-74f2-45ba-b400-6be8e34aceee",
+      "category": "sustainability",
+      "title": "supernatural lifestyle",
+      "description": "Keys to sustaining a lifestyle of miracles",
+      "location": "Bethel Reddings Atlanta",
+      "date": "Sunday",
+      "time": " 8 am",
+      "organizer": "Adam Jahr"
+    },
+    {
+      "id": "045e6340-07c3-41b8-9d7a-47094db818c9",
+      "category": "animal welfare",
+      "title": "gf",
+      "description": "ga",
+      "location": ",n",
+      "date": "n",
+      "time": "n",
+      "organizer": "Adam Jahr"
+    },
+    {
+      "id": "84986032-0b35-48d6-8ecf-286d4fc3ebe1",
+      "category": "animal welfare",
+      "title": "ff",
+      "description": "gg",
+      "location": "gg",
+      "date": "gg",
+      "time": "gg",
+      "organizer": "Adam Jahr"
+    },
+    {
+      "id": "533ff017-bce8-47e4-83f1-ffe07043ba32",
+      "category": "animal welfare",
+      "title": "a",
+      "description": "a",
+      "location": "a",
+      "date": "a",
+      "time": "a",
+      "organizer": "Adam Jahr"
+    },
+    {
+      "id": "dfa1b86e-6047-4e00-a900-7257c232de9b",
+      "category": "nature",
+      "title": "JESUS",
+      "description": "LORD OVER ALL",
+      "location": "UNIVERSE",
+      "date": "NOW",
+      "time": "FOREVER",
+      "organizer": "Adam Jahr"
+    }
+  ]
+}

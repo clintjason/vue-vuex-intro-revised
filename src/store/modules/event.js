@@ -1,18 +1,18 @@
-import { createStore } from 'vuex'
-import User from './modules/user'
-import Event from './modules/event'
+import EventService from '@/services/EventService.js'
 
-export default createStore({
-  /* state: {
-    user: 'Adam Jahr',
+export default {
+  namespaced: true,
+  state: {
     events: [],
     event: {},
     totalEvents: null,
+    valid_id: null,
+    eventCreated: false,
   },
-  getters: {},
   mutations: {
     ADD_EVENT(state, event) {
       state.events.push(event)
+      state.eventCreated = true
     },
     SET_EVENTS(state, response) {
       state.events = response.data
@@ -21,10 +21,13 @@ export default createStore({
     SET_EVENT(state, event) {
       state.event = event
     },
+    VALID_ID(state, result) {
+      state.valid_id = result
+    },
   },
   actions: {
-    createEvent({ commit }, event) {
-      EventService.postEvent(event)
+    async createEvent({ commit }, event) {
+      await EventService.postEvent(event)
         .then(() => {
           commit('ADD_EVENT', event)
         })
@@ -47,11 +50,13 @@ export default createStore({
     },
     fetchEvent({ commit, state }, id) {
       const existingEvent = state.events.find((event) => event.id === id)
+      console.log('existing event is : ', existingEvent)
       if (existingEvent) {
-        this.commit('SET_EVENT', existingEvent)
+        commit('SET_EVENT', existingEvent)
       } else {
         EventService.getEvent(id)
           .then((response) => {
+            console.log('the data is: ', response.data)
             commit('SET_EVENT', response.data)
           })
           .catch((error) => {
@@ -60,6 +65,14 @@ export default createStore({
           })
       }
     },
-  }, */
-  modules: { User, Event },
-})
+    checkId({ commit, state }, id) {
+      console.log('the id parsed is: ', id)
+      let result = state.events.find((event) => event.id === id)
+      if (result === undefined) {
+        commit('VALID_ID', false)
+      } else {
+        commit('VALID_ID', true)
+      }
+    },
+  },
+}
